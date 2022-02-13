@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root version="2.3.8">
+ <tabbed_widget name="Main Window" parent="main_window">
+  <Tab tab_name="Position" containers="1">
+   <Container>
+    <DockSplitter count="2" sizes="0.500747;0.499253" orientation="-">
+     <DockArea name="XY Position">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.032596" top="1.336268" right="73.959274" left="0.124542"/>
+       <limitY/>
+       <curve name="/copter_model/Pose/x" color="#d62728"/>
+       <curve name="/copter_model/Pose/y" color="#1ac938"/>
+      </plot>
+     </DockArea>
+     <DockArea name="Altitude">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-10.251541" top="0.250035" right="73.959274" left="0.124542"/>
+       <limitY/>
+       <curve name="/copter_model/Pose/z" color="#1f77b4"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab tab_name="Velocity" containers="1">
+   <Container>
+    <DockSplitter count="3" sizes="0.333832;0.332335;0.333832" orientation="-">
+     <DockArea name="X">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.078497" top="0.248885" right="73.967349" left="0.124591"/>
+       <limitY/>
+       <curve name="/copter_model/Vel/linear/x" color="#ff7f0e"/>
+      </plot>
+     </DockArea>
+     <DockArea name="Y">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.000001" top="0.000001" right="73.967349" left="0.124591"/>
+       <limitY/>
+       <curve name="/copter_model/Vel/linear/y" color="#f14cc1"/>
+      </plot>
+     </DockArea>
+     <DockArea name="Z">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-2.337539" top="0.057370" right="73.967349" left="0.124591"/>
+       <limitY/>
+       <curve name="/copter_model/Vel/linear/z" color="#9467bd"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab tab_name="Angles" containers="1">
+   <Container>
+    <DockSplitter count="2" sizes="0.500747;0.499253" orientation="-">
+     <DockArea name="Euler Angles">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.000000" top="0.000002" right="73.959332" left="0.125290"/>
+       <limitY/>
+       <curve name="/copter_model/EulerModel/x" color="#f14cc1"/>
+       <curve name="/copter_model/EulerModel/y" color="#9467bd"/>
+      </plot>
+     </DockArea>
+     <DockArea name="Servo Angles">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.025919" top="0.012667" right="73.966917" left="0.000000"/>
+       <limitY/>
+       <curve name="/copter_control/AngleControl/x" color="#17becf"/>
+       <curve name="/copter_control/AngleControl/y" color="#bcbd22"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab tab_name="Experiment" containers="1">
+   <Container>
+    <DockSplitter count="1" sizes="1" orientation="-">
+     <DockArea name="XY-plane">
+      <plot style="Lines" mode="XYPlot">
+       <range bottom="-0.000004" top="0.000001" right="1.336268" left="-0.032592"/>
+       <limitY/>
+       <curve curve_y="/copter_model/Pose/y" curve_x="/copter_model/Pose/x" name="/copter_model/Pose/[x;y]" color="#17becf"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab tab_name="Errors" containers="1">
+   <Container>
+    <DockSplitter count="3" sizes="0.333832;0.332335;0.333832" orientation="-">
+     <DockArea name="X">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.336268" top="1.032592" right="73.958223" left="0.001831"/>
+       <limitY/>
+       <curve name="/copter_control/Errors/x" color="#bcbd22"/>
+      </plot>
+     </DockArea>
+     <DockArea name="Y">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.000001" top="0.000004" right="73.958223" left="0.001831"/>
+       <limitY/>
+       <curve name="/copter_control/Errors/y" color="#ff7f0e"/>
+      </plot>
+     </DockArea>
+     <DockArea name="Z">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.251541" top="10.250035" right="73.967292" left="0.001727"/>
+       <limitY/>
+       <curve name="/copter_control/zError/data" color="#1ac938"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab tab_name="NED" containers="1">
+   <Container>
+    <DockSplitter count="3" sizes="0.333832;0.332335;0.333832" orientation="-">
+     <DockArea name="N">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.032592" top="1.336261" right="73.966894" left="0.125165"/>
+       <limitY/>
+       <curve name="/copter_model/NED/x" color="#d62728"/>
+      </plot>
+     </DockArea>
+     <DockArea name="E">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-0.000000" top="0.000017" right="73.966894" left="0.125165"/>
+       <limitY/>
+       <curve name="/copter_model/NED/y" color="#1ac938"/>
+      </plot>
+     </DockArea>
+     <DockArea name="D">
+      <plot style="Lines" mode="TimeSeries">
+       <range bottom="-10.251542" top="0.250035" right="73.966894" left="0.125165"/>
+       <limitY/>
+       <curve name="/copter_model/NED/z" color="#ff7f0e"/>
+      </plot>
+     </DockArea>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <currentTabIndex index="3"/>
+ </tabbed_widget>
+ <use_relative_time_offset enabled="1"/>
+ <!-- - - - - - - - - - - - - - - -->
+ <!-- - - - - - - - - - - - - - - -->
+ <Plugins>
+  <plugin ID="DataLoad CSV">
+   <default time_axis=""/>
+  </plugin>
+  <plugin ID="DataLoad ROS bags">
+   <use_header_stamp value="false"/>
+   <use_renaming_rules value="true"/>
+   <discard_large_arrays value="true"/>
+   <max_array_size value="100"/>
+  </plugin>
+  <plugin ID="DataLoad ULog"/>
+  <plugin ID="ROS Topic Subscriber">
+   <use_header_stamp value="false"/>
+   <use_renaming_rules value="true"/>
+   <discard_large_arrays value="true"/>
+   <max_array_size value="100"/>
+  </plugin>
+  <plugin ID="UDP Server"/>
+  <plugin ID="WebSocket Server"/>
+  <plugin ID="ZMQ Subscriber"/>
+  <plugin ID="CSV Exporter" status="idle"/>
+  <plugin ID="ROS /rosout Visualization" status="idle"/>
+  <plugin ID="ROS Topic Re-Publisher" status="idle"/>
+ </Plugins>
+ <!-- - - - - - - - - - - - - - - -->
+ <previouslyLoaded_Datafiles/>
+ <!-- - - - - - - - - - - - - - - -->
+ <customMathEquations/>
+ <snippets/>
+ <!-- - - - - - - - - - - - - - - -->
+</root>
+

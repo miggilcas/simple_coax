@@ -1,0 +1,13 @@
+<launch>
+
+    <node pkg="copter_model" type="model" name="modelo" />
+    <node pkg="copter_model" type="F_M_generator" name="FuerzasyMomentos" />
+    <node pkg="copter_model" type="Transformations" name="Transformations" />
+    <node pkg="copter_model" type="Traj_gen" name="Traj_gen"/> 
+    <node pkg="copter_model" type="Pcontroller" name="PosController"/> 
+    <node pkg="copter_model" type="Vcontroller" name="VelController"/>
+    <param name="standar_deviation " value="0.0"/> 
+    <param name="experiment" value="0"/> 
+    
+
+</launch>
