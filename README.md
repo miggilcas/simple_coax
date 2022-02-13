@@ -21,11 +21,17 @@ Above commands should execute without any warnings or errors.
 
 Clone this repository to your workspace:
 
+
+For the complete model with the simulations
 ```
 cd ~/SimpleCopter_ws/src
-git clone https://gitlab.com/miggilcas/simplecopter_package.git
+git clone https://github.com/miggilcas/simple_coax
 ```
-
+Only the Ideal Model:
+```
+cd ~/SimpleCopter_ws/src
+git clone https://github.com/miggilcas/copter_model
+```
 Install depencencies:
 
 ```
